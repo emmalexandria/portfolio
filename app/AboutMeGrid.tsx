@@ -11,7 +11,7 @@ export default function AboutMeGrid() {
             </div>
             <div className="col-start-3 row-span-3 col-span-3 w-full h-full">
                 <div className="bg-light-800 border border-2 border-light-700 rounded-md w-full h-full p-4">
-                    <h1 className="font-display text-6xl">About me</h1>
+                    <h2 className="font-display text-6xl">About me</h2>
                     <div className="font-body text-xl space-y-8 leading-relaxed h-fit mt-auto">
                         <p>
                             I’m a software developer from Cape Town, South Africa. I accidentally ended up becoming a web developer, which was
@@ -27,7 +27,7 @@ export default function AboutMeGrid() {
             <div className=" col-start-3 row-start-4 row-span-1 col-span-3 w-full h-full">
                 <div className="bg-light-800 border border-2 border-light-700 rounded-md  w-full h-full p-4">
                     <div className="flex-col flex h-full w-full">
-                        <h2 className="font-display text-4xl text-dark-100 mb-4">Technologies</h2>
+                        <h3 className="font-display text-4xl text-dark-100 mb-4">Technologies</h3>
                         <span className="flex flex-row align-center  space-x-4 text-3xl text-dark-200 space-x-4 ">
                             <SiSvelte /><SiTypescript /><SiTailwindcss /><SiSass /><SiRust />
                             <p className="text-sm">And a bunch of other stuff that I'm not confident enough to put down here</p>
@@ -37,7 +37,7 @@ export default function AboutMeGrid() {
             </div>
             <div className=" row-span-2 col-span-3 col-start-6 row-start-1 w-full h-full flex">
                 <div className="bg-light-800 border border-2 border-light-700 rounded-md w-full h-full p-4">
-                    <h2 className="font-display text-4xl text-dark-100">Skills</h2>
+                    <h3 className="font-display text-4xl text-dark-100">Skills</h3>
                     <div className="font-body text-base space-y-8 leading-relaxed h-fit mt-auto">
                         <p>There’s a reason I called myself a ‘maker of stuff’.
                             While I mostly write software, I’ve picked up a long list of skills over the years.
