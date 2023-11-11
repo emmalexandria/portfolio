@@ -16,6 +16,7 @@ if (isGithubActions) {
 console.log(basePath)
 
 const nextConfig = {
+    output: 'export',
     assetPrefix: assetPrefix,
     basePath: basePath,
     images: {
