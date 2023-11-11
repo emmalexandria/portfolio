@@ -1,4 +1,4 @@
-name: Node.js CI
+name: NextJS CI
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           # update the Node version to meet your needs
-          node-version: 16
+          node-version: 21
           cache: npm
 
       - name: Build
@@ -28,9 +28,9 @@ jobs:
           npm run export
           touch out/.nojekyll
 
-      - name: Deploy
-        # https://github.com/JamesIves/github-pages-deploy-action
-        uses: JamesIves/github-pages-deploy-action@4.4.0
+
+      - name: Deploy to GitHub Pages          
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
           branch: gh-pages
           folder: out
