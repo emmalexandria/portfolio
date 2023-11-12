@@ -12,10 +12,10 @@
   }
   
 ::-webkit-scrollbar-track {
-    background: theme('colors.light.900');        /* color of the tracking area */
+    background: theme('colors.light.700');        /* color of the tracking area */
   }
   
 ::-webkit-scrollbar-thumb {
     background-color: theme('colors.accent.900');    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
+    border-radius: 4px;       /* roundness of the scroll thumb */  /* creates padding around scroll thumb */
   }

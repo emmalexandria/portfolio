@@ -5,7 +5,8 @@ import { motion } from "framer-motion"
 export default function ContactButton(props: { href: string, children: React.ReactNode }) {
 
     return (
-       <a target="_blank" href={props.href} className="block px-4 py-2 bg-light-700 text-onContainerAlt h-fit w-fit rounded-md font-body hover:bg-light-600">{props.children}</a>
-    )
+        <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} initial={{ scale: 1.00 }}>
+            <a target="_blank" href={props.href} className="block px-4 font-body py-2 border border-2 rounded box-border border-light-700 text-dark-100 hover:bg-light-700">{props.children}</a>
+        </motion.div>)
 }
 

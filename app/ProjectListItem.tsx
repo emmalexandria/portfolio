@@ -1,32 +1,47 @@
+'use client'
+
 import { BiLink } from 'react-icons/bi'
 import Diamond from './Diamond'
+import { m, LazyMotion, domAnimation, easeInOut } from 'framer-motion'
 
-export default function ProjectListItem(props: { url: string, technologies: string[], children: React.ReactNode }) {
+export default function ProjectListItem(props: { url: string, name: string, technologies: string[], n: number }) {
 
     return (
-        <li className="p-4 bg-light-800 rounded-md border border-2 border-light-700">
-            <span className='flex flex-row items-center mb-2'>
-                <h1 className="text-2xl mr-auto">{props.children}</h1>
-                <a href={props.url} target='_blank'>
-                    <BiLink className="text-dark-100 hover:text-accent-500 hover:cursor-pointer text-2xl" />
-                </a>
-                
-            </span>
-            <span className='flex flex-row items-center font-body text-light-100'>
+        <LazyMotion features={domAnimation}>
+            <m.li className="p-4 bg-light-800 rounded-md border border-2 border-light-700"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: props.n * 0.2, easings: easeInOut }}
 
-                {props.technologies.map((tech, i) => {
-                    return i < props.technologies.length - 1 ?
-                        <span key={tech} className='flex flex-row items-center'>
-                            <p >{tech}</p>
-                            <span className='w-2 h-2 mx-2'>
-                                <Diamond />
+                variants={{
+                    visible: { y: 0, opacity: 1, scale: 1},
+                    hidden: { y: -25, opacity: 0, scale: 1.1 }
+                }}
+            >
+                <span className='flex flex-row items-center mb-2'>
+                    <h1 className="text-2xl mr-auto">{props.name}</h1>
+                    <a href={props.url} target='_blank' aria-label={props.name}>
+                        <BiLink className="text-dark-100 hover:text-accent-500 hover:cursor-pointer text-2xl" />
+                    </a>
+
+                </span>
+                <span className='flex flex-row items-center font-body text-light-100'>
+
+                    {props.technologies.map((tech, i) => {
+                        return i < props.technologies.length - 1 ?
+                            <span key={tech} className='flex flex-row items-center'>
+                                <p >{tech}</p>
+                                <span className='w-2 h-2 mx-2'>
+                                    <Diamond />
+                                </span>
                             </span>
-                        </span>
-                        :
-                        <p key={tech}>{tech}</p>
-                })}
-            </span>
-        </li>
+                            :
+                            <p key={tech}>{tech}</p>
+                    })}
+                </span>
+            </m.li>
+        </LazyMotion>
     )
 
 }

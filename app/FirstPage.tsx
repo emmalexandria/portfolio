@@ -7,10 +7,10 @@ import DownArrow from "./DownArrow";
 
 export default function FirstPage() {
     return (
-        <section className="min-h-screen w-full flex justify-center">
+        <section className="min-h-screen w-full flex justify-center bg-repeat bg-fixed" style={{ backgroundImage: 'url("/grid.svg")' }}>
 
             <div className="max-w-fit mt-80 my-auto h-fit">
-                <div className="bg-light-900 ">
+                <div className="bg-light-900 p-2 rounded">
                     <h1 className='font-display font-black text-7xl text-dark-50 mb-4 text-center'>Emma Alexandria
                         <sup>
                             <sup className='text-3xl'>

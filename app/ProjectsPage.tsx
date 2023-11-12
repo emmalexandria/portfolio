@@ -7,8 +7,8 @@ export default function ProjectsPage() {
 
             <h2 className="font-display text-6xl">Projects</h2>
             <ul className="space-y-4 mt-8">
-                <ProjectListItem technologies={["SvelteKit", "SCSS"]} url="https://www.emmalexandria.dev">Personal blog</ProjectListItem>
-                <ProjectListItem technologies={["Tauri", "SvelteKit", "Typescript"]} url="https://www.github.com/emmalexandria/zenwriter">ZenWriter</ProjectListItem>                
+                <ProjectListItem n={1} technologies={["SvelteKit", "SCSS"]} url="https://www.emmalexandria.dev" name="Personal blog"/>
+                <ProjectListItem n={2} technologies={["Tauri", "SvelteKit", "Typescript"]} url="https://www.github.com/emmalexandria/zenwriter" name="ZenWriter"/>           
             </ul>
                             
             </div>
