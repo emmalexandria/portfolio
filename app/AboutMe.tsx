@@ -3,7 +3,7 @@ import { SiRust, SiSass, SiSvelte, SiTailwindcss, SiTypescript } from "react-ico
 
 export default function AboutMe() {
     return (
-        <div className=" flex flex-row px-32 py-16 h-fit bg-light-900 border-top-2 border-bottom-2 border border-light-700 items-center">
+        <div className=" flex flex-row px-32 py-16 h-fit bg-light-900 border-t-1 border-b-1 border border-light-700 items-center">
             <div className="w-1/4">
                 <Image src="/me.png" alt="Picture of me" width={881} height={1791} className="object-cover object-top rounded-md"/>
             </div>

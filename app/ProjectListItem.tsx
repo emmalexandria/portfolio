@@ -8,24 +8,20 @@ export default function ProjectListItem(props: { url: string, name: string, tech
 
     return (
         <LazyMotion features={domAnimation}>
-            <m.li className="p-4 bg-light-800 rounded-md border border-2 border-light-700"
+            <m.a className="block p-4 bg-light-800 rounded-md border border-2 border-light-700 hover:border-accent-700 hover:bg-light-900 hover:cursor-pointer"
+                href={props.url}
+                target="_blank"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: props.n * 0.2, easings: easeInOut }}
-
+                transition={{ duration: 0.2, delay: props.n * 0.2, easings: easeInOut }}
                 variants={{
                     visible: { y: 0, opacity: 1, scale: 1},
                     hidden: { y: -25, opacity: 0, scale: 1.1 }
-                }}
-            >
-                <span className='flex flex-row items-center mb-2'>
-                    <h1 className="text-2xl mr-auto">{props.name}</h1>
-                    <a href={props.url} target='_blank' aria-label={props.name}>
-                        <BiLink className="text-dark-100 hover:text-accent-500 hover:cursor-pointer text-2xl" />
-                    </a>
+                }}>
+            <li>
+                <h1 className="text-2xl text-left">{props.name}</h1>
 
-                </span>
                 <span className='flex flex-row items-center font-body text-light-100'>
 
                     {props.technologies.map((tech, i) => {
@@ -40,7 +36,8 @@ export default function ProjectListItem(props: { url: string, name: string, tech
                             <p key={tech}>{tech}</p>
                     })}
                 </span>
-            </m.li>
+            </li>
+            </m.a>
         </LazyMotion>
     )
 
