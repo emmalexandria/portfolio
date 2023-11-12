@@ -8,9 +8,8 @@ export default function ProjectListItem(props: { url: string, name: string, tech
 
     return (
         <LazyMotion features={domAnimation}>
-            <m.a className="block p-4 bg-light-800 rounded-md border border-2 border-light-700 hover:border-accent-700 hover:bg-light-900 hover:cursor-pointer"
-                href={props.url}
-                target="_blank"
+            <m.li className="block p-4 bg-light-800 rounded-md border border-2 border-light-700 hover:border-accent-700 hover:bg-light-900 hover:cursor-pointer"
+                
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -19,7 +18,7 @@ export default function ProjectListItem(props: { url: string, name: string, tech
                     visible: { y: 0, opacity: 1, scale: 1},
                     hidden: { y: -25, opacity: 0, scale: 1.1 }
                 }}>
-            <li>
+            <a href={props.url} target="_blank">
                 <h1 className="text-2xl text-left">{props.name}</h1>
 
                 <span className='flex flex-row items-center font-body text-light-100'>
@@ -36,8 +35,8 @@ export default function ProjectListItem(props: { url: string, name: string, tech
                             <p key={tech}>{tech}</p>
                     })}
                 </span>
-            </li>
-            </m.a>
+            </a>
+            </m.li>
         </LazyMotion>
     )
 

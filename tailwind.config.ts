@@ -14,8 +14,8 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        accentOnContainer: '2F1204',
-        accentOnContainerAlt: '331405',
+        accentOnContainer: '#2F1204',
+        accentOnContainerAlt: '#331405',
         dark: {
           50: '#0E0501',
           100: '#261E1A',
