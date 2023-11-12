@@ -17,7 +17,7 @@ export default function FirstPage() {
                             </sup>
                         </sup>
                     </h1>
-                    <span className="flex flex-col sm:flex-row justify-center items-center text-center space-y-1 space-x-0 sm:space-x-2 sm:space-y-0 text-xl sm:text-2xl text-accent-500 font-bold bg-gradient-to-r from-accent-500 via-accent-400 to-accent-800 bg-clip-text">
+                    <span className="flex flex-col sm:flex-row justify-center items-center font-body text-center space-y-1 space-x-0 sm:space-x-2 sm:space-y-0 text-xl sm:text-2xl text-accent-500 font-bold bg-gradient-to-r from-accent-500 via-accent-400 to-accent-800 bg-clip-text">
                         <h2 className='text-transparent'>Full stack developer</h2>
                         <span className="block w-2 h-2"><AnimatedDiamond /></span>
                         <h2 className='text-transparent'>Maker of stuff</h2>

@@ -55,8 +55,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        'display': ['Merriweather', 'ui-serif'],
-        'body': ['Open Sans', 'ui-sans-serif']
+        'display': ['var(--font-display)', 'ui-serif'],
+        'body': ['var(--font-body)', 'ui-sans-serif']
       }
     },
   },

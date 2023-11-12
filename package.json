@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",  
+    "lint": "next lint",
     "export": "next export"
   },
   "dependencies": {
+    "@fontsource-variable/open-sans": "^5.0.18",
+    "@fontsource/merriweather": "^5.0.8",
     "framer-motion": "^10.16.4",
     "next": "14.0.2",
     "react": "^18",
