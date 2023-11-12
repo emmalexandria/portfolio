@@ -15,7 +15,7 @@ export default function Home() {
     <main className="bg-light-900 w-full h-full bg-repeat" style={{ backgroundImage: 'url("/grid.svg")' }}>
       <span className='absolute right-6 top-6 text-base'>
         <span className='flex flex-row justify-center space-x-4'>
-          <BlogButton href="https://www.emmalexandria.dev">Blog</BlogButton>
+          <BlogButton href="https://blog.emmalexandria.dev">Blog</BlogButton>
           <ContactButton>Contact me</ContactButton>
         </span>
       </span>
