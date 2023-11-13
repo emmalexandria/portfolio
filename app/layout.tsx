@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Open_Sans, Merriweather } from 'next/font/google'
 import './globals.css'
+import { MotionConfig } from 'framer-motion'
 
 const open_sans = Open_Sans({ subsets: ['latin'], variable: '--font-body'})
 const merriweather = Merriweather({weight: ["300","400","700","900"], subsets: ['latin'], variable: '--font-display'})
