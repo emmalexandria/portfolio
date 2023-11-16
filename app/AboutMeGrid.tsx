@@ -18,7 +18,7 @@ export default function AboutMeGrid() {
                             not my intention.
                         </p>
                         <p>
-                            I’m motivated by the beauty found in creating things to the best of your ability. I love
+                            I’m motivated by the great joy found in making stuff. I love
                             the feeling of something being <em>done</em>, packaged up with a logo and a nice README.
                         </p>
                     </div>
@@ -28,7 +28,7 @@ export default function AboutMeGrid() {
                 <div className="bg-light-900 max-w-full md:col-span-2">
                     <h3 className="font-display text-4xl md:text6xl mb-2">Skills</h3>
                     <div className="font-body md:text-xl leading-relaxed h-fit">
-                        <p>There’s a reason I called myself a ‘maker of stuff’. Besides software,
+                        <p>I called myself a 'maker of stuff' for a reason. Besides software,
                             I’m a competent writer, an amateur photographer, and familiar with a laundry list of creative software.
                         </p>
                     </div>

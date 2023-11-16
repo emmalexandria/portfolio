@@ -16,7 +16,7 @@ export default function ProjectListItem(props: { url: string, name: string, tech
                 transition={{ duration: 0.2, delay: props.n * 0.2, easings: easeInOut }}
                 variants={{
                     visible: { y: 0, opacity: 1, scale: 1},
-                    hidden: { y: -25, opacity: 0, scale: 1.1 }
+                    hidden: { y: -10, opacity: 0, scale: 1.1 }
                 }}>
             <a href={props.url} target="_blank">
                 <h1 className="text-2xl text-left">{props.name}</h1>
