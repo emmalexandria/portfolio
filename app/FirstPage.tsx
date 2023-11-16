@@ -39,6 +39,7 @@ export default function FirstPage() {
                         </p>
                         <span className='flex flex-col w-max mx-auto md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 mt-8'>
                             <ContactButton elementID='contactme'>Contact me</ContactButton>
+                            <BlogButton href="https://blog.emmalexandria.dev">Blog</BlogButton>
                         </span>
                     </div>
                     <div className="w-4 mx-auto mb-16 mt-16 hidden sm:block">
