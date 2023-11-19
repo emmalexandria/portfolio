@@ -1,8 +1,10 @@
 export default function ContactCard(props: { children: React.ReactNode, name: string, url: string }) {
     return (
-        <a className="flex flex-row font-body text sm:text-xl items-center space-x-2 px-4 py-2" href={props.url} target="_blank">
-            {props.children}
-            <p>{props.name}</p>
+        <a className="block font-body sm:text-xl px-4 py-2 hover:bg-light-900/50 hover:text-dark-100 rounded-md" href={props.url} target="_blank">
+            <span className="flex flex-row items-center space-x-2 ">
+                {props.children}
+                <p>{props.name}</p>
+            </span>
         </a>
     )
 }

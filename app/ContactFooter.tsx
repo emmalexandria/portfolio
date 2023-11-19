@@ -6,8 +6,8 @@ export default function ContactFooter(props: { headerID: string }) {
         <section className="relative flex flex-col w-full h-full bg-gradient-to-b from-transparent to-accent-700 -z-5"  >
             <div className="flex flex-col w-full h-full z-10">
                 <div className="w-fit h-fit py-32 mt-16 mx-auto text-center text-accentOnContainerAlt">
-                    <h2 id={props.headerID} className="font-display text-5xl sm:text-7xl ">Contact me</h2>
-                    <ul className="flex flex-col space-y-2 items-center">
+                    <h2 id={props.headerID} className="font-display text-5xl sm:text-7xl mb-4 ">Contact me</h2>
+                    <ul className="flex flex-col space-y-2">
                         <li>
                             <ContactCard name="emma.jellemabutler@gmail.com" url="mailto:emma.jellemabutler@gmail.com"><AiOutlineMail /></ContactCard>
                         </li>
@@ -22,7 +22,7 @@ export default function ContactFooter(props: { headerID: string }) {
 
                 </div>
                 <div>
-                    <p className="justify-self-end font-body text-accentOnContainer mb-4 italic text-center">This site was built with NextJS, TailwindCSS, and Framer Motion</p>
+                    <p className="justify-self-end font-body text-accentOnContainer/75 mb-4 italic text-center">This site was built with NextJS, TailwindCSS, and Framer Motion</p>
                 </div>
 
 

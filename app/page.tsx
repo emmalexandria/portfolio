@@ -3,6 +3,8 @@ import ProjectsPage from './ProjectsPage'
 import ContactFooter from './ContactFooter'
 import AboutMeGrid from './AboutMeGrid'
 import { Metadata } from 'next'
+import Timeline from './Timeline'
+import AboutPage from './AboutPage'
 
 export const metadata: Metadata = {
   title: "Emma Alexandria's Portfolio",
@@ -15,7 +17,7 @@ export default function Home() {
   return (
     <main className="bg-light-900 w-full h-full" >
       <FirstPage />
-      <AboutMeGrid/>
+      <AboutPage/>
       <ProjectsPage />
       <ContactFooter headerID='contactme'/>
     </main>
