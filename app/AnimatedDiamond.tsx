@@ -13,8 +13,7 @@ export default function AnimatedDiamond() {
             borderRadius: ["50%", "0%"],
           }}
           transition={{
-            delay: 0.1,
-            duration: 0.5,
+            duration: 0.4,
             ease: "easeInOut",
           }}
         >
