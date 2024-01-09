@@ -15,11 +15,16 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-light-900 w-full h-full" >
+    <main className="bg-light-900 w-full h-full text-dark-50" >
       <FirstPage />
-      <AboutPage/>
-      <ProjectsPage />
-      <ContactFooter headerID='contactme'/>
+      <AboutPage />
+      <div className='grid grid-rows-2 md:grid-cols-2 px-8 py-4'>
+        <ProjectsPage />
+        <ContactFooter headerID='contactme' />
+      </div>
+      <p id="footnote" className="font-body my-2 px-4 text-center mx-auto italic">
+        †Technically it's Emma Alexandria Jellema-Butler but thats too long for a web portfolio
+      </p>
     </main>
   )
 }

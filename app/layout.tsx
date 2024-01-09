@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className='w-full'>
+    <html lang="en" className='w-full scroll-smooth'>
       <body className={`w-full ${open_sans.variable} ${merriweather.variable}`}>{children}</body>
     </html>
   )
