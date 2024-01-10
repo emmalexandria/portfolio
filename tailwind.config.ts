@@ -9,9 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'noise': "url('/nnnoise.svg')"
       },
       colors: {
         accentOnContainer: '#2F1204',
@@ -55,8 +53,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        'display': ['var(--font-display)', 'ui-serif'],
-        'body': ['var(--font-body)', 'ui-sans-serif']
+        'display': ['var(--font-mono)', 'ui-serif'],
+        'body': ['var(--font-body)', 'ui-sans-serif'],
       }
     },
   },

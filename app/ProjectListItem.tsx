@@ -3,6 +3,7 @@
 import { IoMdArrowForward } from "react-icons/io";
 import Diamond from './Diamond'
 import { m, LazyMotion, domAnimation, easeInOut } from 'framer-motion'
+import SubHeader from "./components/Subheader";
 
 export default function ProjectListItem(props: { url: string, name: string, technologies: string[], n: number }) {
 
@@ -18,11 +19,9 @@ export default function ProjectListItem(props: { url: string, name: string, tech
                     visible: { opacity: 1, scale: 1},
                     hidden: { opacity: 0, scale: 1.1 }
                 }}>
-            <a href={props.url} target="_blank" className="hover:text-accent-500">
-                <span className="flex flex-row text-3xl items-center space-x-4">
-                <h3 className="text-4xl text-left">{props.name}</h3>
-                <IoMdArrowForward />
-                </span>
+            <a href={props.url} target="_blank" className="hover:text-accent-500 block text-4xl flex flex-row items-center space-x-4">
+                   <SubHeader>{props.name}</SubHeader>
+                    <IoMdArrowForward style={{verticalAlign: 'middle'}}/>
             </a>
                 <span className='flex flex-row items-center font-body text-light-100'>
 

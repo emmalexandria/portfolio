@@ -25,3 +25,19 @@
   background: theme('colors.accent.900');
   color: theme('colors.dark.100')
 }
+
+@layer utilities {
+  .stripes-to-r {
+    background: repeating-linear-gradient(
+      -45deg,
+      theme('colors.light.900'),
+      theme('colors.light.900') 5px,
+      theme('colors.dark.100') 5px,
+      theme('colors.dark.100') 10px
+    )
+  }
+
+  .invert {
+    filter: invert(100%)
+  }
+}

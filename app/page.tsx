@@ -18,7 +18,7 @@ export default function Home() {
     <main className="bg-light-900 w-full h-full text-dark-50" >
       <FirstPage />
       <AboutPage />
-      <div className='grid grid-rows-2 md:grid-cols-2 px-8 py-4'>
+      <div className='grid grid-rows-2 md:grid-cols-2 md:grid-rows-none px-8 py-4 h-fit'>
         <ProjectsPage />
         <ContactFooter headerID='contactme' />
       </div>

@@ -14,7 +14,7 @@ export default function ContactButton(props: { elementID: string, children: Reac
 
     return (
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} initial={{ scale: 1.00 }}>
-            <button className="w-full text-center block px-4 py-2 bg-light-900 font-body border border-2 rounded box-border border-accent-900 text-dark-100 hover:bg-accent-900 hover:text-accentOnContainer" onClick={clickHandler}>{props.children}</button>
+            <button className="w-full font-semibold text-center block px-4 py-2 bg-light-900 font-body border-2 box-border border-accent-900 text-dark-100 hover:bg-accent-900 hover:text-accentOnContainer" onClick={clickHandler}>{props.children}</button>
         </motion.div>
     )
 }
