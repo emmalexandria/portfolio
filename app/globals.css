@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 ::selection {
-  background: theme('colors.accent.900');
-  color: theme('colors.dark.100')
+  background: theme('colors.accent.500');
+  color: theme('colors.light.900');
 }
 
 ::-webkit-scrollbar {
@@ -21,10 +21,6 @@
   background-color: theme('colors.accent.900');
 }
 
-::selection {
-  background: theme('colors.accent.900');
-  color: theme('colors.dark.100')
-}
 
 @layer utilities {
   .stripes-to-r {
@@ -37,7 +33,7 @@
     )
   }
 
-  .invert {
-    filter: invert(100%)
+  .image-clip-path {
+    clip-path: circle(100.0% at 50% 100%);
   }
 }

@@ -34,10 +34,10 @@ export default function FirstPage() {
                                 </sup>
                             </sup>
                         </motion.h1>
-                        <span className="flex flex-col sm:flex-row items-center font-body text-center space-y-1 space-x-0 sm:space-x-2 sm:space-y-0 text-xl sm:text-2xl  font-bold text-accent-700 dark:text-accent-500">
-                            <h2>Full stack developer</h2>
+                        <span className="flex flex-row items-center font-body text-center space-x-2 text-lg sm:text-2xl  font-bold text-accent-700 dark:text-accent-500">
+                            <h2 className="w-fit">Full stack developer</h2>
                             <span className="block w-2 h-2"><AnimatedDiamond /></span>
-                            <h2>Maker of stuff</h2>
+                            <h2 className="w-fit">Maker of stuff</h2>
                         </span>
                     </div>
                         

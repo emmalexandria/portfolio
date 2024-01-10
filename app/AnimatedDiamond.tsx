@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function AnimatedDiamond() {
     return (
         <motion.div
-          className="w-full h-full bg-light-50 rounded-full block"
+          className="w-full h-full bg-dark-950 dark:bg-light-800 rounded-full block"
           initial={{scale: 1.5}}
           animate={{
             scale: [1.5, 1],
