@@ -10,7 +10,7 @@ import { motion, useScroll } from "framer-motion";
 export default function AboutPage() {
     return (
     
-        <div className="shadow-sm bg-center bg-repeat bg-contain sm:bg-auto sm:bg-left-top bg-fixed my-8" >
+        <div className="shadow-sm dark:shadow-none " >
             <AboutMeGrid/>  
                {/*  <Timeline/> */}
         </div>

@@ -10,7 +10,7 @@ export default function AboutMeGrid() {
  
 
     return (
-        <div className="bg-light-900 p-8 border border-r-0 border-l-0 border-t-1 border-b-1 border-light-700 max-w-full text-dark-50">
+        <div className="dark:bg-dark-900 p-8 border border-r-0 border-l-0 border-t-1 border-b-1 border-light-700 dark:border-none max-w-full ">
             
             <div className="grid grid-rows-1 md:grid-rows-2 md:grid-cols-4 max-w-full gap-8 lg:w-3/4 xl:w-1/2">
                 <div className="max-w-full md:row-span-2">
@@ -18,7 +18,7 @@ export default function AboutMeGrid() {
                 <Image src="/me.png" alt="Picture of me" width={881} height={1791} className="hidden md:block object-top object-cover h-full" />
                 </div>
 
-                <div className="bg-light-900 max-w-full md:col-span-3">
+                <div className="max-w-full md:col-span-3">
                     <Header>About me</Header>
                     <div className="font-body md:text-xl space-y-8 leading-relaxed">
                         <p>
@@ -33,7 +33,7 @@ export default function AboutMeGrid() {
                     
                 </div>
                 
-                <div className="bg-light-900 max-w-full md:col-span-2">
+                <div className="max-w-full md:col-span-2">
                     <Subheader>Skills</Subheader>
                     <div className="font-body md:text-xl leading-relaxed h-fit">
                         <p>I called myself a 'maker of stuff' for a reason. Besides writing software,

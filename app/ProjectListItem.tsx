@@ -11,19 +11,18 @@ export default function ProjectListItem(props: { url: string, name: string, tech
         <LazyMotion features={domAnimation}>
             <m.li className="block space-y-1"
                 
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ duration: 0.2, delay: props.n * 0.2, easings: easeInOut }}
+                initial="init"
+                whileHover="hovered"
+                transition={{ duration: 0.1, easings: easeInOut }}
                 variants={{
-                    visible: { opacity: 1, scale: 1},
-                    hidden: { opacity: 0, scale: 1.1 }
+                    hovered: { opacity: 1, scale: 1, x: 10},
+                    init: { opacity: 1, scale: 1}
                 }}>
             <a href={props.url} target="_blank" className="hover:text-accent-500 block text-4xl flex flex-row items-center space-x-4">
                    <SubHeader>{props.name}</SubHeader>
                     <IoMdArrowForward style={{verticalAlign: 'middle'}}/>
             </a>
-                <span className='flex flex-row items-center font-body text-light-100'>
+                <span className='flex flex-row items-center font-body text-dark-700 dark:text-light-400'>
 
                     {props.technologies.map((tech, i) => {
                         return i < props.technologies.length - 1 ?

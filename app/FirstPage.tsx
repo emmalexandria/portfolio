@@ -23,7 +23,7 @@ export default function FirstPage() {
         <MotionConfig reducedMotion="user">
             <section className="h-screen flex flex-col justify-center px-4" >
                     <div className="h-1/2 flex flex-col justify-center">
-                        <motion.h1 initial={{ y: -15, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{duration: 0.4, ease: "easeOut", delay: 0}} id="main-header" className='font-mono font-black uppercase text-5xl sm:text-8xl md:text-9xl text-dark-50 mb-1 w-min sm:w-fit'>
+                        <motion.h1 initial={{ y: -15, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{duration: 0.4, ease: "easeOut", delay: 0}} id="main-header" className='font-mono font-black uppercase text-5xl sm:text-8xl md:text-9xl mb-1 w-min sm:w-fit'>
                             Emma Alexandria
                             <sup>
                                 <sup className='text-3xl'>
@@ -34,10 +34,10 @@ export default function FirstPage() {
                                 </sup>
                             </sup>
                         </motion.h1>
-                        <span className="flex flex-col sm:flex-row items-center font-body text-center space-y-1 space-x-0 sm:space-x-2 sm:space-y-0 text-xl sm:text-2xl  font-bold bg-gradient-to-r from-accent-500 to-accent-900 bg-clip-text">
-                            <h2 className='text-transparent'>Full stack developer</h2>
+                        <span className="flex flex-col sm:flex-row items-center font-body text-center space-y-1 space-x-0 sm:space-x-2 sm:space-y-0 text-xl sm:text-2xl  font-bold text-accent-700 dark:text-accent-500">
+                            <h2>Full stack developer</h2>
                             <span className="block w-2 h-2"><AnimatedDiamond /></span>
-                            <h2 className='text-transparent'>Maker of stuff</h2>
+                            <h2>Maker of stuff</h2>
                         </span>
                     </div>
                         

@@ -5,7 +5,7 @@ import Subheader from "./components/Subheader";
 export default function ProjectsPage() {
     return (
         <section className="w-full flex bg-center bg-repeat bg-contain sm:bg-auto sm:bg-left-top bg-fixed">
-                <div className="bg-light-900 w-fit h-fit text-dark-50">
+                <div className="w-fit h-fit">
 
                     <Header>Projects</Header>
                     <ul className="space-y-4 mt-8">
